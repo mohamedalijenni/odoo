@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<odoo>
+     <record id="view_res_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+                <!-- <xpath expr="//field[@name='parent_id']" position="after">
+                     <field name="commercial"/>
+                     </xpath>> -->
+                <!-- <data>
+                    <field name="function" position="after">
+                    <field name="commercial"/>
+                    </field>
+                </data>  -->
+              
+        
+                 <xpath expr="//field[@name='property_account_position_id']" position="after">    
+                 <field name="matricule_fiscale"/>
+                 </xpath>
+                 
+                 
+                 <!-- <xpath expr="//field[@name='category_id']" position="after"> 
+                  <xpath expr="//page[1]" position="inside">
+                     <field name="tva"/>
+                     <field name="fodec"/>
+                 </xpath>  -->
+                               
+                  <data>
+                       <field name="lang" position="after">
+                       <field name="garantie"/>
+                       <!-- <field name="commercial"/> --> 
+                      </field>
+                 </data> 
+                 
+                 
+                 <!-- <xpath expr="//page[4]" position="after">    
+                <page string="alternatif">
+                <group>
+                    <field name="name"/>
+                    <field name="telephone"/>
+                </group>
+                </page>
+                 </xpath>    -->
+                 
+         </field>
+    </record>
+  
+
+    
+</odoo>
