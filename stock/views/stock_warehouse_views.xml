@@ -210,6 +210,6 @@
             name="Reordering Rules"
             res_model="stock.warehouse.orderpoint"
             src_model="stock.warehouse"
-            groups="stock.group_stock_user"/>
+             groups="stock.group_stock_user" /> 
 
 </odoo>
