@@ -17,6 +17,7 @@ Formation technque odoo
     'data': [
         'views/client_view.xml',
         'views/achat_view.xml',
+        'views/softpurchase.xml'
 #         'views/commercial_view.xml'
 #         'views/bon_commande_view.xml'
 #         'report/report_sale_order_view.xml'
